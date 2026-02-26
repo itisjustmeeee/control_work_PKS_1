@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\KR1\\LibraryApp\\LibraryApp.csproj": {}
+    "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\LibraryApp\\LibraryApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\KR1\\LibraryApp\\LibraryApp.csproj": {
+    "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\LibraryApp\\LibraryApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\KR1\\LibraryApp\\LibraryApp.csproj",
+        "projectUniqueName": "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\LibraryApp\\LibraryApp.csproj",
         "projectName": "LibraryApp",
-        "projectPath": "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\KR1\\LibraryApp\\LibraryApp.csproj",
+        "projectPath": "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\LibraryApp\\LibraryApp.csproj",
         "packagesPath": "C:\\Users\\svetl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\KR1\\LibraryApp\\obj\\",
+        "outputPath": "C:\\Users\\svetl\\OneDrive\\Desktop\\папка))\\projects\\control_work_PKS_1\\LibraryApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
