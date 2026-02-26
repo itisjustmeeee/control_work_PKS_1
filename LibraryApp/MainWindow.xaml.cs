@@ -16,6 +16,7 @@ namespace LibraryApp
         public MainWindow()
         {
             InitializeComponent();
+            MessageBox.Show("MainWindow создан");
             var app = (App)Application.Current;
             _context = app.ServiceProvider.GetRequiredService<LibraryContext>();
 
