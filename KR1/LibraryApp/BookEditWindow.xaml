@@ -1,0 +1,42 @@
+<Window x:Class="LibraryApp.BookEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактирование книги" Height="400" Width="500">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Название:" Grid.Row="0"/>
+        <TextBox x:Name="txtTitle" Grid.Row="0" Margin="80,0,0,10"/>
+
+        <Label Content="Автор:" Grid.Row="1"/>
+        <ComboBox x:Name="cmbAuthor" Grid.Row="1" Margin="80,0,0,10" 
+                  DisplayMemberPath="LastName" SelectedValuePath="Id"/>
+
+        <Label Content="Год издания:" Grid.Row="2"/>
+        <TextBox x:Name="txtYear" Grid.Row="2" Margin="80,0,0,10"/>
+
+        <Label Content="ISBN:" Grid.Row="3"/>
+        <TextBox x:Name="txtISBN" Grid.Row="3" Margin="80,0,0,10"/>
+
+        <Label Content="Жанр:" Grid.Row="4"/>
+        <ComboBox x:Name="cmbGenre" Grid.Row="4" Margin="80,0,0,10" 
+                  DisplayMemberPath="Name" SelectedValuePath="Id"/>
+
+        <Label Content="На складе:" Grid.Row="5"/>
+        <TextBox x:Name="txtStock" Grid.Row="5" Margin="80,0,0,10"/>
+
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Width="100" Margin="0,0,10,0" Click="Save_Click"/>
+            <Button Content="Отмена" Width="100" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

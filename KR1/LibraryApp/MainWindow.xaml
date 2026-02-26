@@ -1,0 +1,44 @@
+﻿<Window x:Class="LibraryApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Библиотека" Height="600" Width="1000">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Фильтры -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <ComboBox x:Name="GenreFilter" Width="200" Margin="0,0,10,0" 
+                      DisplayMemberPath="Name" SelectedValuePath="Id"
+                      SelectionChanged="GenreFilter_SelectionChanged"/>
+            <ComboBox x:Name="AuthorFilter" Width="200" 
+                      DisplayMemberPath="LastName" SelectedValuePath="Id"
+                      SelectionChanged="AuthorFilter_SelectionChanged"/>
+            <Button Content="Сбросить фильтры" Margin="10,0,0,0" Click="ResetFilters_Click"/>
+        </StackPanel>
+
+        <!-- DataGrid -->
+        <DataGrid x:Name="BooksGrid" Grid.Row="1" AutoGenerateColumns="False" 
+                  IsReadOnly="True" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author.LastName}" Width="150"/>
+                <DataGridTextColumn Header="Жанр" Binding="{Binding Genre.Name}" Width="120"/>
+                <DataGridTextColumn Header="Год" Binding="{Binding PublishYear}" Width="80"/>
+                <DataGridTextColumn Header="ISBN" Binding="{Binding ISBN}" Width="120"/>
+                <DataGridTextColumn Header="На складе" Binding="{Binding QuantityInStock}" Width="90"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Добавить книгу" Width="120" Margin="0,0,10,0" Click="AddBook_Click"/>
+            <Button Content="Редактировать" Width="120" Margin="0,0,10,0" Click="EditBook_Click"/>
+            <Button Content="Удалить" Width="120" Click="DeleteBook_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
